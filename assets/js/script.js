@@ -7,9 +7,10 @@ let hints = [
   'Goodison Park', 'Elland Road', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford', 'St James Park', 'Carrow Road', 
   'St Marys Stadium', 'Tottenham Hotspur Stadium', 'Vicarage Road', 'London Stadium', 'Molineux Stadium'];
 let answer;
-let totaltWrongs = 6;
-let mistakes = 0;
+//let totaltWrongs = 6;
+let mistakes = 6;
 let guess = [];
+let currentWord = null;
 /**
  * Picks a random team from the premierTeams array
  */
@@ -25,7 +26,7 @@ function buildKeyboard() {
         <button
           class="alphabet"
           id='` + letter + `'
-          onClick="handleGuess('` + letter + `')"
+          onClick="playerGuess('` + letter + `')"
         >
           ` + letter + `
         </button>
@@ -33,6 +34,30 @@ function buildKeyboard() {
   
     document.getElementById('keyboard').innerHTML = buttonsHTML;
   }
+  /**
+   * Displays dotted line for the hidden word for the player to guess
+   */
+  function gameWord() {
+    currentWord = answer.split('').map(letter => (guess.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+  
+    document.getElementById('currentTeam').innerHTML = currentWord;
+    //console.log(answer);
+  } 
 
+  function correctWord() {
+    if(currentWord === answer) {
+      document.getElementById('keyboard').innerHTML = 'Winner!';
+    } 
+  }
+
+  function upDateChancesLeft () {
+    document.getElementById('mistakes').innerHTML = mistakes;
+  }
+
+  function playerGuess() {
+
+  }
+  
   getRandomTeam();
   buildKeyboard();
+  gameWord();
