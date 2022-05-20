@@ -3,17 +3,25 @@ let premierTeams = [
     'Liverpool', 'ManchesterCity', 'ManchesterUnited', 'NewcastleUnited', 'NorwichCity', 'Southampton', 'TottenhamHotspur', 'Watford', 
     'WestHamUnited', 'Wolverhampton'];
 let answer;
-//let totaltWrongs = 6;
 let mistakes = 6;
 let guess = [];
 let currentWord = null;
 
+
+
+
+
+
+
+
 /**
  * Picks a random team from the premierTeams array
  */
-function getRandomTeam () {
-    answer = premierTeams[Math.floor(Math.random() * premierTeams.length)];
+function getRandomTeam () { 
+  answer = premierTeams[Math.floor(Math.random() * premierTeams.length)];
+    
 }
+
 /**
  * Generats button that represent the alphabet and inserts them to html.
  */
@@ -34,10 +42,13 @@ function buildKeyboard() {
    * Displays dotted line for the hidden word for the player to guess
    */
   function gameWord() {
+    answer = answer.toLowerCase();
     currentWord = answer.split('').map(letter => (guess.indexOf(letter) >= 0 ? letter : " _ ")).join('');
     document.getElementById('currentTeam').innerHTML = currentWord;
     console.log(answer);
   } 
+
+  //Updates gallowimage when player enters wrong 
   function updateGallowImg() {
     if(mistakes === 6){
     document.getElementById('gallowImage').src = 'assets/images/hangman0.JPG';
@@ -90,7 +101,8 @@ function buildKeyboard() {
       gameOver();
     }
   }
-  
+
+
   document.getElementById('hint').addEventListener('click', getHint);
   /**
    * Alerts a hint for teams homestadium
@@ -100,11 +112,14 @@ function buildKeyboard() {
       'Emirates Stadium', 'Villa Park', 'Brentford Community Stadium', 'Falmer Stadium', 'Turf Moor', 'Stamford Bridge', 'Selhurst Park',
       'Goodison Park', 'Elland Road', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford', 'St James Park', 'Carrow Road', 
       'St Marys Stadium', 'Tottenham Hotspur Stadium', 'Vicarage Road', 'London Stadium', 'Molineux Stadium'];
-    let hintIndex = premierTeams.indexOf(answer);
-    window.alert (hints [hintIndex]); 
+      lower();
+      let hintIndex = premierTeams.indexOf(answer);
+      window.alert(hints [hintIndex]); 
 }
+
 document.getElementById('reset').addEventListener('click', resetButton);
-  function resetButton () {
+
+function resetButton () {
     mistakes = 6;
     guess = [];
     document.getElementById('gallowImage').src = 'assets/images/hangman0.JPG';
