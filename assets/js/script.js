@@ -1,15 +1,12 @@
 let premierTeams = [
-    'Arsenal', 'Aston Villa', 'Brentford', 'Brighton', 'Burnley', 'Chelsea', 'CrystalPalce', 'Everton', 'LeedsUnited', 'LeicesterCity', 
-    'Liverpool', 'ManchesterCity', 'ManchesterUnited', 'NewcastleUnited', 'NorwichCity', 'Southampton', 'TottenhamHotspur', 'Watford', 
-    'WestHamUnited', 'Wolverhampton'];
+    'arsenal', 'aston villa', 'brentford', 'brighton', 'burnley', 'chelsea', 'crystalpalce', 'everton', 'leedsunited', 'leicestercity', 
+    'liverpool', 'manchestercity', 'manchesterunited', 'newcastleunited', 'norwichcity', 'southampton', 'tottenhamhotspur', 'watford', 
+    'westhamunited', 'wolverhampton'];
+
 let answer;
 let mistakes = 6;
 let guess = [];
 let currentWord = null;
-
-
-
-
 
 
 
@@ -42,7 +39,7 @@ function buildKeyboard() {
    * Displays dotted line for the hidden word for the player to guess
    */
   function gameWord() {
-    answer = answer.toLowerCase();
+    //answer = answer.toLowerCase();
     currentWord = answer.split('').map(letter => (guess.indexOf(letter) >= 0 ? letter : " _ ")).join('');
     document.getElementById('currentTeam').innerHTML = currentWord;
     console.log(answer);
@@ -80,12 +77,29 @@ function buildKeyboard() {
   function gameOver() {
     if(mistakes === 0){
       document.getElementById('currentTeam').innerHTML = 'Game over!';
+      document.getElementById('keyboard').innerHTML = 'Try Again';
     }
 
   }
   function upDateChancesLeft () {
     document.getElementById('mistakes').innerHTML = mistakes;
   }
+  document.getElementById('hint').addEventListener('click', getHint);
+  /**
+   * Alerts a hint for teams homestadium
+   */
+
+  
+  function getHint () {
+    let hints = [
+    'Emirates Stadium', 'Villa Park', 'Brentford Community Stadium', 'Falmer Stadium', 'Turf Moor', 'Stamford Bridge', 'Selhurst Park',
+    'Goodison Park', 'Elland Road', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford', 'St James Park', 'Carrow Road', 
+    'St Marys Stadium', 'Tottenham Hotspur Stadium', 'Vicarage Road', 'London Stadium', 'Molineux Stadium'];
+
+    let hintIndex = premierTeams.indexOf(answer);
+    console.log(hints);
+    window.alert(hints [hintIndex]); 
+}
 
   function playerGuess(chosenLetter) {
     guess.indexOf(chosenLetter) === -1 ? guess.push(chosenLetter) : null;
@@ -101,21 +115,6 @@ function buildKeyboard() {
       gameOver();
     }
   }
-
-
-  document.getElementById('hint').addEventListener('click', getHint);
-  /**
-   * Alerts a hint for teams homestadium
-   */
-  function getHint () {
-    let hints = [
-      'Emirates Stadium', 'Villa Park', 'Brentford Community Stadium', 'Falmer Stadium', 'Turf Moor', 'Stamford Bridge', 'Selhurst Park',
-      'Goodison Park', 'Elland Road', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford', 'St James Park', 'Carrow Road', 
-      'St Marys Stadium', 'Tottenham Hotspur Stadium', 'Vicarage Road', 'London Stadium', 'Molineux Stadium'];
-      lower();
-      let hintIndex = premierTeams.indexOf(answer);
-      window.alert(hints [hintIndex]); 
-}
 
 document.getElementById('reset').addEventListener('click', resetButton);
 
