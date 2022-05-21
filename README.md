@@ -75,8 +75,9 @@ Code passes without any Errors but with 15 warnings regarding syntax in ES6
 
 ![javascriptvalidator](https://user-images.githubusercontent.com/93250649/169667228-9a952089-3968-4636-9ea7-c0565fe9c1f3.JPG)
 
-Lighthous testing: 
+Lighthouse testing: 
 
+![lighthouse](https://user-images.githubusercontent.com/93250649/169667332-ff4fd64a-31d1-42f3-9a50-b9be135b7c2c.JPG)
 
 
 ## <a name="section-5"></a> Deployment
