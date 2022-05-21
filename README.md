@@ -83,7 +83,7 @@ Lighthouse testing:
 ## <a name="section-5"></a> Deployment
 The project was deployed via GitHub pages 
 
-Link to the page: 
+Link to the page: https://krookmartin.github.io/Project2HangMan/
 ## <a name="section-6"></a> Credits
 
 ### Code
