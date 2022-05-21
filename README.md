@@ -37,6 +37,10 @@ Design choices was kept to a minum in order to focus on maximazing practising ja
 
 
 
+![mainimg](https://user-images.githubusercontent.com/93250649/169667168-9af52650-0851-4afa-ad4a-2d1dfa73b31e.JPG)
+
+
+
 ## <a name="section-3"></a> Technologies Used
 ### Languages Used
 
