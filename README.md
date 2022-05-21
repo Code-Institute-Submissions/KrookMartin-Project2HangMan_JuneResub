@@ -73,6 +73,8 @@ Testing of JavaScript was done via https://jshint.com/
 
 Code passes without any Errors but with 15 warnings regarding syntax in ES6
 
+![javascriptvalidator](https://user-images.githubusercontent.com/93250649/169667228-9a952089-3968-4636-9ea7-c0565fe9c1f3.JPG)
+
 Lighthous testing: 
 
 
