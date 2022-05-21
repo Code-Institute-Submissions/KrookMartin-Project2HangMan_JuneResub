@@ -60,6 +60,7 @@ Testing of HTML done via https://validator.w3.org/
 All pages pass without errors or warnings
 
 Testing of CSS done via https://jigsaw.w3.org/css-validator/
+![cssvalidator](https://user-images.githubusercontent.com/93250649/169666907-f39c9ec2-bb36-4c77-8400-b708ea088bdc.JPG)
 
 All pages pass without errors or warnings
 
