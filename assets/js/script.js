@@ -9,8 +9,6 @@ let guess = [];
 let currentWord = null;
 
 
-
-
 /**
  * Picks a random team from the premierTeams array
  */
@@ -77,7 +75,6 @@ function buildKeyboard() {
   function gameOver() {
     if(mistakes === 0){
       document.getElementById('currentTeam').innerHTML = 'Game over!';
-      document.getElementById('keyboard').innerHTML = 'Try Again';
     }
 
   }
