@@ -56,6 +56,7 @@ GitHub: is used as the respository for the projects code after being pushed from
 
 ## <a name="section-4"></a> Testing
 Testing of HTML done via https://validator.w3.org/
+![htmlvalidator](https://user-images.githubusercontent.com/93250649/169666971-2a0c180e-6514-4748-9938-b278f81d5102.JPG)
 
 All pages pass without errors or warnings
 
