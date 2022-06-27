@@ -69,7 +69,7 @@ else if (mistakes === 0)
 
 function correctWord() {
   if(currentWord === answer) {
-    window.alert('You win!')
+    window.alert(`You win! The correct answer was ${answer}`)
     resetButton();
     
   } 
@@ -77,7 +77,7 @@ function correctWord() {
 function gameOver() {
   if(mistakes === 0){
 
-    window.alert('Game over!')
+    window.alert(`Game over!The correct answer was ${answer}`)
     upDateChancesLeft();
     resetButton();
     
