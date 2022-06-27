@@ -22,7 +22,9 @@ A simple take on the classic guessing game hangman. This verison has a single ca
 ## <a name="section-1"></a> Features
 
 ### Hangman image
-The hangman image starts out with a images of an empty gallow, when the player chose a letter that is not in the hidden word the images updates one bodypart at per wrong answer. The image was selected for its stickman style to keep it playful and not draw so much attention to some what macabre nature of the games name and the imagary tide to it.     
+The hangman image starts out with a images of an empty gallow, when the player chose a letter that is not in the hidden word the images updates one bodypart at per wrong answer. The image was selected for its stickman style to keep it playful and not draw so much attention to some what macabre nature of the games name and the imagary tide to it.    
+![features1](https://user-images.githubusercontent.com/93250649/175928932-ae6bcf9e-ed72-4c07-b6b6-91dd05fe4a7b.JPG)
+
 
 ### Hidden word and keyboard  
 The games hidden word appears represented by blank lines in the center of the screen. The amount of lines represens the amount of letters in the randomly selected word. The keyboard serves as a clickable keyboard. When the player click a letter it gets inactivated, if the letter was a part of the hidden word it appears in its correct place on the dotted line, if the letter was not in the word one chance is subtracted from the total amount of trys avavlible to the player.
