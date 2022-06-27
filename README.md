@@ -1,4 +1,6 @@
 # Hangman 
+![readmemainimg](https://user-images.githubusercontent.com/93250649/175928464-ab6f8c9d-3281-4d5f-baf7-651387f84c19.JPG)
+
 A simple take on the classic guessing game hangman. This verison has a single category where the player has 6 chances to guess which english premier leauge team that is the hidden word. The games rules and task is easy to understand and has a simple gallow picture that updates if the player answers wrong. Upon six wrong answers the full gallow picture is represented on the screen and the player can chose to start over again with a new randomly selcted team.
 
 ### Content
