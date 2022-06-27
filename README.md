@@ -28,6 +28,8 @@ The hangman image starts out with a images of an empty gallow, when the player c
 
 ### Hidden word and keyboard  
 The games hidden word appears represented by blank lines in the center of the screen. The amount of lines represens the amount of letters in the randomly selected word. The keyboard serves as a clickable keyboard. When the player click a letter it gets inactivated, if the letter was a part of the hidden word it appears in its correct place on the dotted line, if the letter was not in the word one chance is subtracted from the total amount of trys avavlible to the player.
+![features2](https://user-images.githubusercontent.com/93250649/175929248-5d2b6f50-aef8-4cef-8339-5e66821147bc.JPG)
+
 
 ### Reset button
 The reset button dose pretty much what it says in the tin. It reverts back to the original state of the page, ie it resets the players chances, brings back the original gallow image, activates all the keyboard buttons and selects a new random team for the player to guess.
