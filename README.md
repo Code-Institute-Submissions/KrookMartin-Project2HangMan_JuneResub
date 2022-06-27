@@ -87,7 +87,12 @@ Lighthouse testing:
 
 
 ## <a name="section-5"></a> Deployment
-The project was deployed via GitHub pages 
+The website was deployed on GitHub Pages. The website was developed on Gitpod and pushed to its GitHub repository using git command lines in the terminal. Every time a commit pushed to the website's repository updates the HTML and CSS files, GitHub Pages automatically updates the live demo. To deploy the website:
+
+from the GitHub repository, click on 'settings'
+find and click on 'pages' on the setting sidebar menu
+select the branch to be used. In this case 'main'
+Refresh the page and in a few minutes, a message will appear if the website was deployed correctly
 
 Link to the page: https://krookmartin.github.io/Project2HangMan/
 ## <a name="section-6"></a> Credits
@@ -107,4 +112,4 @@ Code idea and implementaion by https://www.youtube.com/c/SimonSuhOnline
 ### Media
 
 Images from http://www.pexels.com
-
+Favicon from https://favicon.io/emoji-favicons/skull
